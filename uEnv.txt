@@ -1,0 +1,2 @@
+bootargs=console=ttyAMA0,115200 root=/dev/ram rw
+bootcmd=tftp 0x82000000 uImage; tftp 0x83000000 hi3719cv100.dtb; tftp 0x84000000 initrd.img; bootm 0x82000000 0x84000000 0x83000000
